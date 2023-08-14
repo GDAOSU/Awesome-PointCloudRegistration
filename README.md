@@ -1,4 +1,14 @@
-# Awesome-PointCloudRegistration
+# Point Cloud Registration for LiDAR and Photogrammetric Data: a Critical Synthesis and Performance Analysis on Classic and Deep Learning Algorithms
+Ningli Xu, Rongjun Qin, Shuang Song  
+
+ISPRS Open Journal of Photogrammetry and Remote Sensing (2023)  
+
+[[arxiv]](https://arxiv.org/abs/2302.07184)  
+
+Three-dimensional (3D) point cloud registration is a fundamental step for many 3D modeling and mapping applications. Existing approaches are highly disparate in the data source, scene complexity, and application, therefore the current practices in various point cloud registration tasks are still ad-hoc processes. Recent advances in computer vision and deep learning have shown promising performance in estimating rigid/similarity transformation between unregistered point clouds of complex objects and scenes. However, their performances are mostly evaluated using a limited number of datasets from a single sensor (e.g. Kinect or RealSense cameras), lacking a comprehensive overview of their applicability in photogrammetric 3D mapping scenarios. In this work, we provide a comprehensive review of the state-of-the-art (SOTA) point cloud registration methods, where we analyze and evaluate these methods using a diverse set of point cloud data from indoor to satellite sources. The quantitative analysis allows for exploring the strengths, applicability, challenges, and future trends of these methods. In contrast to existing analysis works that introduce point cloud registration as a holistic process, our experimental analysis is based on its inherent two-step process to better comprehend these approaches including feature/keypoint-based initial coarse registration and dense fine registration through cloud-to-cloud (C2C) optimization. More than ten methods, including classic hand-crafted, deep-learning-based feature correspondence, and robust C2C methods were tested. We observed that the success rate of most of the algorithms are fewer than 40% over the datasets we tested and there are still are large margin of improvement upon existing algorithms concerning 3D sparse corresopondence search, and the ability to register point clouds with complex geometry and occlusions. With the evaluated statistics on three datasets, we conclude the best-performing methods for each step and provide our recommendations, and outlook future efforts.
+
+
+# Awesome registration methods
 ## - 3D Non-Rigid Registration
 - Feature preserving non-rigid iterative weighted closest point and semi-curvature registration. TIP. 2022
 - Accurate Point Cloud Registration with Robust Optimal Transport. NIPS. 2021
@@ -136,8 +146,8 @@
 - [[RESSO,2019, TLS](https://3d.bk.tudelft.nl/liangliang/publications/2019/plade/resso.html)]  
 - [[ETH PRS TLS](https://prs.igp.ethz.ch/research/completed_projects/automatic_registration_of_point_clouds.html)]  
 - [[ETH ASL](https://projects.asl.ethz.ch/datasets/doku.php?id=laserregistration:laserregistration)]  
+
 ## Citation
-We also did a critical review and performance evaluation of SOTA point cloud registration algorithms (including [SpinNet](https://github.com/QingyongHu/SpinNet),  [TEASER++](https://github.com/MIT-SPARK/TEASER-plusplus), [PointDSC](https://github.com/XuyangBai/PointDSC), [Generalized ICP](https://www.robots.ox.ac.uk/~avsegal/resources/papers/Generalized_ICP.pdf), [Symmetric ICP](https://dl.acm.org/doi/abs/10.1145/3306346.3323037), [Fast and Robust ICP](https://github.com/yaoyx689/Fast-Robust-ICP) and more). They are evalated on three challenging datasets ([RESSO](https://ieeexplore.ieee.org/abstract/document/8936527), [Whu-TLS](https://www.sciencedirect.com/science/article/pii/S0924271620300836), OSUCampus) with hugh difference in overlap, scene context and resolution. Our analysis allows for exploring the strengths, applicility challenges and future trends of these methods. Please reach out to this document for more details!
 ```bibtex
 @article{xu2023point,
   title={Point cloud registration for LiDAR and photogrammetric data: A critical synthesis and performance analysis on classic and deep learning algorithms},
