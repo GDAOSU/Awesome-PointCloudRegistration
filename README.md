@@ -17,6 +17,7 @@ Three-dimensional (3D) point cloud registration is a fundamental step for many 3
 
 ## - 3D Rigid Registration
 ### Learning Based
+- ColorPCR: Color point cloud registration with multi-stage geometric-color fusion." 2024 CVPR
 - Correspondence-Free Point Cloud Registration with SO(3)-Equivariant Implicit Shape Representations. PMLR 2022.
 - PREDATOR: Registration of 3D Point Clouds with Low Overlap. CVPR2021  
 - RPM-Net: Robust Point Matching using Learned Features. CVPR2020  
